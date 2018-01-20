@@ -17,9 +17,12 @@
 		821FE7982013577200F34189 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE7972013577200F34189 /* CustomButton.swift */; };
 		821FE79A20135A2200F34189 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE79920135A2200F34189 /* RoundedView.swift */; };
 		821FE79C20135B4E00F34189 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE79B20135B4E00F34189 /* CustomTextField.swift */; };
+		821FE79E2013613E00F34189 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 821FE79D2013613E00F34189 /* GoogleService-Info.plist */; };
+		E2220B0840CCCA1D2E4BE5AA /* Pods_SpotMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D33B2CEAE98A415377AE734 /* Pods_SpotMark.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C4361379CB7B0F13882E048 /* Pods-SpotMark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotMark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotMark/Pods-SpotMark.debug.xcconfig"; sourceTree = "<group>"; };
 		821FE7782013516700F34189 /* SpotMark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotMark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		821FE77B2013516700F34189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		821FE7802013516700F34189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +35,9 @@
 		821FE7972013577200F34189 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		821FE79920135A2200F34189 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		821FE79B20135B4E00F34189 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		821FE79D2013613E00F34189 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9D33B2CEAE98A415377AE734 /* Pods_SpotMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D11F3024ADBD89F3BE2380 /* Pods-SpotMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotMark.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotMark/Pods-SpotMark.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2220B0840CCCA1D2E4BE5AA /* Pods_SpotMark.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B5BA06BDC0FF32C0E4DA554 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D33B2CEAE98A415377AE734 /* Pods_SpotMark.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F6BD720E9A28503779336A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C4361379CB7B0F13882E048 /* Pods-SpotMark.debug.xcconfig */,
+				B4D11F3024ADBD89F3BE2380 /* Pods-SpotMark.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		821FE76F2013516700F34189 = {
 			isa = PBXGroup;
 			children = (
 				821FE77A2013516700F34189 /* SpotMark */,
 				821FE7792013516700F34189 /* Products */,
+				6F6BD720E9A28503779336A7 /* Pods */,
+				3B5BA06BDC0FF32C0E4DA554 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +99,7 @@
 				821FE7822013516700F34189 /* Assets.xcassets */,
 				821FE7842013516700F34189 /* LaunchScreen.storyboard */,
 				821FE7872013516700F34189 /* Info.plist */,
+				821FE79D2013613E00F34189 /* GoogleService-Info.plist */,
 			);
 			path = SpotMark;
 			sourceTree = "<group>";
@@ -118,9 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 821FE78A2013516700F34189 /* Build configuration list for PBXNativeTarget "SpotMark" */;
 			buildPhases = (
+				E04BBE71D9205C635EF6166A /* [CP] Check Pods Manifest.lock */,
 				821FE7742013516700F34189 /* Sources */,
 				821FE7752013516700F34189 /* Frameworks */,
 				821FE7762013516700F34189 /* Resources */,
+				2B2472836B6DB149F13C1F1D /* [CP] Embed Pods Frameworks */,
+				C2DEED343FA76347C38CA05B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,10 +205,67 @@
 				821FE7832013516700F34189 /* Assets.xcassets in Resources */,
 				821FE7942013538C00F34189 /* Roboto-Light.ttf in Resources */,
 				821FE7812013516700F34189 /* Main.storyboard in Resources */,
+				821FE79E2013613E00F34189 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B2472836B6DB149F13C1F1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpotMark/Pods-SpotMark-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpotMark/Pods-SpotMark-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2DEED343FA76347C38CA05B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpotMark/Pods-SpotMark-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E04BBE71D9205C635EF6166A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpotMark-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		821FE7742013516700F34189 /* Sources */ = {
@@ -324,6 +411,7 @@
 		};
 		821FE78B2013516700F34189 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C4361379CB7B0F13882E048 /* Pods-SpotMark.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +427,7 @@
 		};
 		821FE78C2013516700F34189 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4D11F3024ADBD89F3BE2380 /* Pods-SpotMark.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
