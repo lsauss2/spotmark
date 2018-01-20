@@ -52,6 +52,9 @@ them always handy</string>
                                 <state key="normal" title="Log in with Facebook">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="logginWithFacebookTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OtJ-S4-RaQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nI3-hy-Sem" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
                                 <rect key="frame" x="40" y="447" width="295" height="40"/>
@@ -64,6 +67,9 @@ them always handy</string>
                                 <state key="normal" title="Sign in">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="logginBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dCX-WY-k6K"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yS9-91-vbX" customClass="RoundedView" customModule="SpotMark" customModuleProvider="target">
                                 <rect key="frame" x="40" y="326" width="295" height="97"/>
@@ -102,6 +108,9 @@ them always handy</string>
                                         <state key="normal" title="Forgot?">
                                             <color key="titleColor" red="0.1058823529" green="0.8980392157" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="forgotPasswordTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m73-Yw-s7K"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.95686274509803915" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
@@ -132,6 +141,9 @@ them always handy</string>
                                         <state key="normal" title="Sign up">
                                             <color key="titleColor" red="0.1058823529" green="0.8980392157" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signUpBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zxT-L7-1dv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -153,6 +165,11 @@ them always handy</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTxtField" destination="bJf-Kj-KMe" id="wOp-Zw-Xh2"/>
+                        <outlet property="loginBtn" destination="nI3-hy-Sem" id="DCn-Yf-yuA"/>
+                        <outlet property="passTxtField" destination="VJa-UZ-8gN" id="jcX-Gj-85n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

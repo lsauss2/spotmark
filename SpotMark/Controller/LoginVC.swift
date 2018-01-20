@@ -9,6 +9,10 @@
 import UIKit
 
 class LoginVC: UIViewController {
+    
+    @IBOutlet weak var emailTxtField: CustomTextField!
+    @IBOutlet weak var passTxtField: CustomTextField!
+    @IBOutlet weak var loginBtn: CustomButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,20 +20,18 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBAction func logginBtnTapped(_ sender: Any) {
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func logginWithFacebookTapped(_ sender: Any) {
     }
-    */
-
+    
+    @IBAction func signUpBtnTapped(_ sender: Any) {
+    }
+    
+    @IBAction func forgotPasswordTapped(_ sender: Any) {
+    }
+    
+    
 }
