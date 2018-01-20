@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		821FE77C2013516700F34189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE77B2013516700F34189 /* AppDelegate.swift */; };
-		821FE77E2013516700F34189 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE77D2013516700F34189 /* ViewController.swift */; };
 		821FE7812013516700F34189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 821FE77F2013516700F34189 /* Main.storyboard */; };
 		821FE7832013516700F34189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 821FE7822013516700F34189 /* Assets.xcassets */; };
 		821FE7862013516700F34189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 821FE7842013516700F34189 /* LaunchScreen.storyboard */; };
+		821FE791201352AC00F34189 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE790201352AC00F34189 /* LoginVC.swift */; };
+		821FE7942013538C00F34189 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 821FE7932013538C00F34189 /* Roboto-Light.ttf */; };
+		821FE7962013539500F34189 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 821FE7952013539500F34189 /* Roboto-Medium.ttf */; };
+		821FE7982013577200F34189 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE7972013577200F34189 /* CustomButton.swift */; };
+		821FE79A20135A2200F34189 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE79920135A2200F34189 /* RoundedView.swift */; };
+		821FE79C20135B4E00F34189 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE79B20135B4E00F34189 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		821FE7782013516700F34189 /* SpotMark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotMark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		821FE77B2013516700F34189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		821FE77D2013516700F34189 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		821FE7802013516700F34189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		821FE7822013516700F34189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		821FE7852013516700F34189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		821FE7872013516700F34189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		821FE790201352AC00F34189 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		821FE7932013538C00F34189 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		821FE7952013539500F34189 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		821FE7972013577200F34189 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		821FE79920135A2200F34189 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		821FE79B20135B4E00F34189 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,51 @@
 		821FE77A2013516700F34189 /* SpotMark */ = {
 			isa = PBXGroup;
 			children = (
+				821FE7922013536400F34189 /* Fonts */,
+				821FE78F2013529000F34189 /* Controller */,
+				821FE78E2013528C00F34189 /* View */,
+				821FE78D2013528500F34189 /* Model */,
 				821FE77B2013516700F34189 /* AppDelegate.swift */,
-				821FE77D2013516700F34189 /* ViewController.swift */,
 				821FE77F2013516700F34189 /* Main.storyboard */,
 				821FE7822013516700F34189 /* Assets.xcassets */,
 				821FE7842013516700F34189 /* LaunchScreen.storyboard */,
 				821FE7872013516700F34189 /* Info.plist */,
 			);
 			path = SpotMark;
+			sourceTree = "<group>";
+		};
+		821FE78D2013528500F34189 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		821FE78E2013528C00F34189 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				821FE7972013577200F34189 /* CustomButton.swift */,
+				821FE79920135A2200F34189 /* RoundedView.swift */,
+				821FE79B20135B4E00F34189 /* CustomTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		821FE78F2013529000F34189 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				821FE790201352AC00F34189 /* LoginVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		821FE7922013536400F34189 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				821FE7952013539500F34189 /* Roboto-Medium.ttf */,
+				821FE7932013538C00F34189 /* Roboto-Light.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +170,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				821FE7962013539500F34189 /* Roboto-Medium.ttf in Resources */,
 				821FE7862013516700F34189 /* LaunchScreen.storyboard in Resources */,
 				821FE7832013516700F34189 /* Assets.xcassets in Resources */,
+				821FE7942013538C00F34189 /* Roboto-Light.ttf in Resources */,
 				821FE7812013516700F34189 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				821FE77E2013516700F34189 /* ViewController.swift in Sources */,
+				821FE79A20135A2200F34189 /* RoundedView.swift in Sources */,
+				821FE791201352AC00F34189 /* LoginVC.swift in Sources */,
 				821FE77C2013516700F34189 /* AppDelegate.swift in Sources */,
+				821FE7982013577200F34189 /* CustomButton.swift in Sources */,
+				821FE79C20135B4E00F34189 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
