@@ -18,6 +18,7 @@
 		821FE79A20135A2200F34189 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE79920135A2200F34189 /* RoundedView.swift */; };
 		821FE79C20135B4E00F34189 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE79B20135B4E00F34189 /* CustomTextField.swift */; };
 		821FE79E2013613E00F34189 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 821FE79D2013613E00F34189 /* GoogleService-Info.plist */; };
+		821FE7A1201364E800F34189 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE7A0201364E800F34189 /* DataService.swift */; };
 		E2220B0840CCCA1D2E4BE5AA /* Pods_SpotMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D33B2CEAE98A415377AE734 /* Pods_SpotMark.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		821FE79920135A2200F34189 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		821FE79B20135B4E00F34189 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		821FE79D2013613E00F34189 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		821FE7A0201364E800F34189 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		9D33B2CEAE98A415377AE734 /* Pods_SpotMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D11F3024ADBD89F3BE2380 /* Pods-SpotMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotMark.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotMark/Pods-SpotMark.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 		821FE77A2013516700F34189 /* SpotMark */ = {
 			isa = PBXGroup;
 			children = (
+				821FE79F201364DB00F34189 /* Services */,
 				821FE7922013536400F34189 /* Fonts */,
 				821FE78F2013529000F34189 /* Controller */,
 				821FE78E2013528C00F34189 /* View */,
@@ -136,6 +139,14 @@
 				821FE7932013538C00F34189 /* Roboto-Light.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		821FE79F201364DB00F34189 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				821FE7A0201364E800F34189 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,11 +231,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SpotMark/Pods-SpotMark-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +288,7 @@
 				821FE79A20135A2200F34189 /* RoundedView.swift in Sources */,
 				821FE791201352AC00F34189 /* LoginVC.swift in Sources */,
 				821FE77C2013516700F34189 /* AppDelegate.swift in Sources */,
+				821FE7A1201364E800F34189 /* DataService.swift in Sources */,
 				821FE7982013577200F34189 /* CustomButton.swift in Sources */,
 				821FE79C20135B4E00F34189 /* CustomTextField.swift in Sources */,
 			);
