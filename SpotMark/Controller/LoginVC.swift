@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginVC: UIViewController {
     
@@ -19,12 +20,32 @@ class LoginVC: UIViewController {
         
         emailTxtField.delegate = self
         passTxtField.delegate = self
+        
+        if Auth.auth().currentUser != nil {
+            print(Auth.auth().currentUser!.email!)
+        } else {
+            "No user found"
+        }
+    
 
         // Do any additional setup after loading the view.
     }
 
 
     @IBAction func logginBtnTapped(_ sender: Any) {
+        
+        if emailTxtField.text != "" && passTxtField.text != "" {
+            AuthService.instance.loginUser(withEmail: emailTxtField.text!, andPassword: passTxtField.text!, loginComplete: { (success, error) in
+                
+                if success {
+                    print("User logged in")
+                } else {
+                    print(error)
+                }
+                
+            })
+        }
+        
     }
     
     @IBAction func logginWithFacebookTapped(_ sender: Any) {
