@@ -840,21 +840,33 @@ them always handy</string>
                                             <rect key="frame" x="0.0" y="0.0" width="325" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VH5-XQ-OaX">
-                                                    <rect key="frame" x="15" y="31" width="295" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VH5-XQ-OaX">
+                                                    <rect key="frame" x="10" y="30" width="305" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="ck1-mC-2jg"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
                                                     <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhc-SI-0fQ">
-                                                    <rect key="frame" x="15" y="10" width="295" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhc-SI-0fQ">
+                                                    <rect key="frame" x="10" y="10" width="305" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="us2-n2-QiB"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
                                                     <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uhc-SI-0fQ" firstAttribute="top" secondItem="div-en-LWM" secondAttribute="top" constant="10" id="55U-Sj-Mra"/>
+                                                <constraint firstAttribute="trailing" secondItem="VH5-XQ-OaX" secondAttribute="trailing" constant="10" id="DpC-WF-Q3G"/>
+                                                <constraint firstItem="VH5-XQ-OaX" firstAttribute="leading" secondItem="div-en-LWM" secondAttribute="leading" constant="10" id="JAR-cs-GwE"/>
+                                                <constraint firstItem="uhc-SI-0fQ" firstAttribute="leading" secondItem="div-en-LWM" secondAttribute="leading" constant="10" id="M7z-56-NJu"/>
+                                                <constraint firstItem="VH5-XQ-OaX" firstAttribute="top" secondItem="uhc-SI-0fQ" secondAttribute="bottom" id="lbR-xF-4ge"/>
+                                                <constraint firstAttribute="trailing" secondItem="uhc-SI-0fQ" secondAttribute="trailing" constant="10" id="xYY-ea-pKF"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="placeAddressLbl" destination="VH5-XQ-OaX" id="opd-Vg-Ncj"/>
