@@ -27,6 +27,7 @@ class AddPlaceVC: UIViewController {
     }
     
     @IBAction func closeBtnTapped(_ sender: Any) {
+        view.endEditing(true)
         dismiss(animated: true, completion: nil)
     }
 
