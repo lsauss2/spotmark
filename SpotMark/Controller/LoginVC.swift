@@ -28,6 +28,7 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func signUpBtnTapped(_ sender: Any) {
+        performSegue(withIdentifier: "showSignUp", sender: nil)
     }
     
     @IBAction func forgotPasswordTapped(_ sender: Any) {

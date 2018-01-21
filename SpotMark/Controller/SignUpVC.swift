@@ -34,6 +34,7 @@ class SignUpVC: UIViewController {
     
     
     @IBAction func signInTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     
