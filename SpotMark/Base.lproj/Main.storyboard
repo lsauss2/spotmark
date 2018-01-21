@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9M4-Eq-nG9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -475,13 +475,36 @@ them always handy</string>
                     <view key="view" contentMode="scaleToFill" id="oHR-Zj-RJY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDX-qX-ThE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="xeX-Zt-I7m"/>
+                                </constraints>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="HMs-y4-Wxh">
+                                <rect key="frame" x="168" y="508" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xDX-qX-ThE" firstAttribute="leading" secondItem="V1N-N0-rEq" secondAttribute="leading" id="7Jp-n3-pss"/>
+                            <constraint firstItem="xDX-qX-ThE" firstAttribute="trailing" secondItem="V1N-N0-rEq" secondAttribute="trailing" id="UGs-UX-VOz"/>
+                            <constraint firstItem="xDX-qX-ThE" firstAttribute="top" secondItem="oHR-Zj-RJY" secondAttribute="top" id="tV7-dp-9bI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="V1N-N0-rEq"/>
                     </view>
+                    <connections>
+                        <outlet property="pageControl" destination="HMs-y4-Wxh" id="Ejb-gt-6jP"/>
+                        <outlet property="scrollView" destination="xDX-qX-ThE" id="Daw-pt-JDz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQ5-D6-Z7C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786" y="725"/>
+            <point key="canvasLocation" x="784.79999999999995" y="724.58770614692662"/>
         </scene>
     </scenes>
     <resources>
