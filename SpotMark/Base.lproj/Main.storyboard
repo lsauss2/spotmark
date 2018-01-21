@@ -812,13 +812,50 @@ them always handy</string>
                     <view key="view" contentMode="scaleToFill" id="lnl-j8-oO9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iev-5T-YI6">
+                                <rect key="frame" x="25" y="40" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="14" id="0xh-3b-R5i"/>
+                                    <constraint firstAttribute="height" constant="14" id="qhk-nb-bOV"/>
+                                </constraints>
+                                <state key="normal" image="close-icon"/>
+                            </button>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="dkU-vS-jBN">
+                                <rect key="frame" x="25" y="70" width="325" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HgI-hr-bVv">
+                                <rect key="frame" x="25" y="126" width="325" height="541"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search a Place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwf-wj-UMB">
+                                <rect key="frame" x="134.5" y="38" width="106.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lq8-2M-ZYP" firstAttribute="trailing" secondItem="dkU-vS-jBN" secondAttribute="trailing" constant="25" id="2bw-dm-tXq"/>
+                            <constraint firstItem="kwf-wj-UMB" firstAttribute="centerY" secondItem="Iev-5T-YI6" secondAttribute="centerY" id="BeM-EI-v2a"/>
+                            <constraint firstItem="Iev-5T-YI6" firstAttribute="leading" secondItem="Lq8-2M-ZYP" secondAttribute="leading" constant="25" id="H4B-hM-0ni"/>
+                            <constraint firstItem="kwf-wj-UMB" firstAttribute="centerX" secondItem="lnl-j8-oO9" secondAttribute="centerX" id="Iaf-hK-mvh"/>
+                            <constraint firstItem="Iev-5T-YI6" firstAttribute="top" secondItem="Lq8-2M-ZYP" secondAttribute="top" constant="20" id="Jjc-RN-tVP"/>
+                            <constraint firstItem="dkU-vS-jBN" firstAttribute="top" secondItem="kwf-wj-UMB" secondAttribute="bottom" constant="13" id="KPo-0C-Nbf"/>
+                            <constraint firstItem="HgI-hr-bVv" firstAttribute="leading" secondItem="Lq8-2M-ZYP" secondAttribute="leading" constant="25" id="OiW-gZ-U0s"/>
+                            <constraint firstItem="dkU-vS-jBN" firstAttribute="leading" secondItem="Lq8-2M-ZYP" secondAttribute="leading" constant="25" id="Q86-d8-P3h"/>
+                            <constraint firstItem="Lq8-2M-ZYP" firstAttribute="trailing" secondItem="HgI-hr-bVv" secondAttribute="trailing" constant="25" id="SQ9-gT-86S"/>
+                            <constraint firstItem="HgI-hr-bVv" firstAttribute="top" secondItem="dkU-vS-jBN" secondAttribute="bottom" id="j80-uk-eZ6"/>
+                            <constraint firstItem="HgI-hr-bVv" firstAttribute="bottom" secondItem="Lq8-2M-ZYP" secondAttribute="bottom" id="rVJ-Uv-r8A"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Lq8-2M-ZYP"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7V-ea-D1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1524" y="-658"/>
+            <point key="canvasLocation" x="1524" y="-658.02098950524737"/>
         </scene>
         <!--Custom Tab Bar Controller-->
         <scene sceneID="Mr6-hP-K6o">
@@ -826,6 +863,7 @@ them always handy</string>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sFu-9P-WfT" customClass="CustomTabBarController" customModule="SpotMark" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="wTg-gg-ZgP">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
