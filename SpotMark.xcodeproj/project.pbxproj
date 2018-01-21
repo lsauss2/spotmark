@@ -25,6 +25,8 @@
 		82E923B0201433B20099DA6D /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923AF201433B20099DA6D /* ForgotPasswordVC.swift */; };
 		82E923B220144B530099DA6D /* WalkthroughVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923B120144B530099DA6D /* WalkthroughVC.swift */; };
 		82E923B420144B700099DA6D /* SpotsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923B320144B700099DA6D /* SpotsListVC.swift */; };
+		82E923B620145E700099DA6D /* WalkthroughView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E923B520145E700099DA6D /* WalkthroughView.xib */; };
+		82E923B820145EB20099DA6D /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923B720145EB20099DA6D /* WalkthroughView.swift */; };
 		E2220B0840CCCA1D2E4BE5AA /* Pods_SpotMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D33B2CEAE98A415377AE734 /* Pods_SpotMark.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		82E923AF201433B20099DA6D /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		82E923B120144B530099DA6D /* WalkthroughVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughVC.swift; sourceTree = "<group>"; };
 		82E923B320144B700099DA6D /* SpotsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsListVC.swift; sourceTree = "<group>"; };
+		82E923B520145E700099DA6D /* WalkthroughView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkthroughView.xib; sourceTree = "<group>"; };
+		82E923B720145EB20099DA6D /* WalkthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughView.swift; sourceTree = "<group>"; };
 		9D33B2CEAE98A415377AE734 /* Pods_SpotMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D11F3024ADBD89F3BE2380 /* Pods-SpotMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotMark.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotMark/Pods-SpotMark.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +114,7 @@
 				821FE78E2013528C00F34189 /* View */,
 				821FE78D2013528500F34189 /* Model */,
 				821FE77B2013516700F34189 /* AppDelegate.swift */,
+				82E923B520145E700099DA6D /* WalkthroughView.xib */,
 				821FE77F2013516700F34189 /* Main.storyboard */,
 				821FE7822013516700F34189 /* Assets.xcassets */,
 				821FE7842013516700F34189 /* LaunchScreen.storyboard */,
@@ -132,6 +137,7 @@
 				821FE7972013577200F34189 /* CustomButton.swift */,
 				821FE79920135A2200F34189 /* RoundedView.swift */,
 				821FE79B20135B4E00F34189 /* CustomTextField.swift */,
+				82E923B720145EB20099DA6D /* WalkthroughView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 				821FE7942013538C00F34189 /* Roboto-Light.ttf in Resources */,
 				821FE7812013516700F34189 /* Main.storyboard in Resources */,
 				821FE79E2013613E00F34189 /* GoogleService-Info.plist in Resources */,
+				82E923B620145E700099DA6D /* WalkthroughView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +324,7 @@
 				82E923AC201413F10099DA6D /* AuthService.swift in Sources */,
 				82E923B220144B530099DA6D /* WalkthroughVC.swift in Sources */,
 				82E923B420144B700099DA6D /* SpotsListVC.swift in Sources */,
+				82E923B820145EB20099DA6D /* WalkthroughView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
