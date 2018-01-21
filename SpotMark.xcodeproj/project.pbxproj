@@ -31,6 +31,7 @@
 		82E923BC20148D6D0099DA6D /* ContactsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923BB20148D6D0099DA6D /* ContactsListVC.swift */; };
 		82E923BE20148D7A0099DA6D /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923BD20148D7A0099DA6D /* ProfileVC.swift */; };
 		82E923C020148E860099DA6D /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923BF20148E860099DA6D /* ShadowView.swift */; };
+		82E923C220149F380099DA6D /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923C120149F380099DA6D /* CustomTabBarController.swift */; };
 		E2220B0840CCCA1D2E4BE5AA /* Pods_SpotMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D33B2CEAE98A415377AE734 /* Pods_SpotMark.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		82E923BB20148D6D0099DA6D /* ContactsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListVC.swift; sourceTree = "<group>"; };
 		82E923BD20148D7A0099DA6D /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		82E923BF20148E860099DA6D /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		82E923C120149F380099DA6D /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		9D33B2CEAE98A415377AE734 /* Pods_SpotMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D11F3024ADBD89F3BE2380 /* Pods-SpotMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotMark.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotMark/Pods-SpotMark.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +164,7 @@
 				82E923B920148D600099DA6D /* SpotsMapVC.swift */,
 				82E923BB20148D6D0099DA6D /* ContactsListVC.swift */,
 				82E923BD20148D7A0099DA6D /* ProfileVC.swift */,
+				82E923C120149F380099DA6D /* CustomTabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				821FE79C20135B4E00F34189 /* CustomTextField.swift in Sources */,
 				82E923AC201413F10099DA6D /* AuthService.swift in Sources */,
 				82E923B220144B530099DA6D /* WalkthroughVC.swift in Sources */,
+				82E923C220149F380099DA6D /* CustomTabBarController.swift in Sources */,
 				82E923C020148E860099DA6D /* ShadowView.swift in Sources */,
 				82E923B420144B700099DA6D /* SpotsListVC.swift in Sources */,
 				82E923BA20148D600099DA6D /* SpotsMapVC.swift in Sources */,

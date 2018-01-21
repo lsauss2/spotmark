@@ -805,10 +805,10 @@ them always handy</string>
             </objects>
             <point key="canvasLocation" x="1524" y="-695"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar Controller-->
         <scene sceneID="Mr6-hP-K6o">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sFu-9P-WfT" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sFu-9P-WfT" customClass="CustomTabBarController" customModule="SpotMark" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="wTg-gg-ZgP">
                         <autoresizingMask key="autoresizingMask"/>
