@@ -10,8 +10,8 @@ import UIKit
 
 class searchPlaceCell: UITableViewCell {
     
-    @IBOutlet weak var placeNameLbl: UIView!
-    @IBOutlet weak var placeAddressLbl: UIView!
+    @IBOutlet weak var placeNameLbl: UILabel!
+    @IBOutlet weak var placeAddressLbl: UILabel!
     
 
     override func awakeFromNib() {
@@ -25,7 +25,8 @@ class searchPlaceCell: UITableViewCell {
     }
     
     func configureCell(place: Place){
-
+        self.placeNameLbl.text = place.placeName
+        self.placeAddressLbl.text = place.placeAddress
     }
 
 }
