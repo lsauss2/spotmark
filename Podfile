@@ -8,5 +8,5 @@ target 'SpotMark' do
  pod 'Firebase/Core'
  pod 'Firebase/Database'
  pod 'Firebase/Auth'
-
+ pod 'Alamofire', '~> 4.5'
 end

@@ -33,6 +33,11 @@
 		82E923C020148E860099DA6D /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923BF20148E860099DA6D /* ShadowView.swift */; };
 		82E923C220149F380099DA6D /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923C120149F380099DA6D /* CustomTabBarController.swift */; };
 		82E923C42014A3250099DA6D /* AddPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923C32014A3250099DA6D /* AddPlaceVC.swift */; };
+		82E923C62014AF920099DA6D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923C52014AF920099DA6D /* Constants.swift */; };
+		82E923C82014AFF20099DA6D /* searchPlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923C72014AFF20099DA6D /* searchPlaceCell.swift */; };
+		82E923CA2014B1690099DA6D /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923C92014B1690099DA6D /* Place.swift */; };
+		82E923CC2014C6E50099DA6D /* roundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923CB2014C6E50099DA6D /* roundedImage.swift */; };
+		82E923CE2014C70D0099DA6D /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923CD2014C70D0099DA6D /* BorderedButton.swift */; };
 		E2220B0840CCCA1D2E4BE5AA /* Pods_SpotMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D33B2CEAE98A415377AE734 /* Pods_SpotMark.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +71,11 @@
 		82E923BF20148E860099DA6D /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		82E923C120149F380099DA6D /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		82E923C32014A3250099DA6D /* AddPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceVC.swift; sourceTree = "<group>"; };
+		82E923C52014AF920099DA6D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		82E923C72014AFF20099DA6D /* searchPlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchPlaceCell.swift; sourceTree = "<group>"; };
+		82E923C92014B1690099DA6D /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		82E923CB2014C6E50099DA6D /* roundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedImage.swift; sourceTree = "<group>"; };
+		82E923CD2014C70D0099DA6D /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		9D33B2CEAE98A415377AE734 /* Pods_SpotMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D11F3024ADBD89F3BE2380 /* Pods-SpotMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotMark.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotMark/Pods-SpotMark.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +148,7 @@
 		821FE78D2013528500F34189 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				82E923C92014B1690099DA6D /* Place.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +162,9 @@
 				82E923B720145EB20099DA6D /* WalkthroughView.swift */,
 				82E923B520145E700099DA6D /* WalkthroughView.xib */,
 				82E923BF20148E860099DA6D /* ShadowView.swift */,
+				82E923C72014AFF20099DA6D /* searchPlaceCell.swift */,
+				82E923CB2014C6E50099DA6D /* roundedImage.swift */,
+				82E923CD2014C70D0099DA6D /* BorderedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +201,7 @@
 			children = (
 				821FE7A0201364E800F34189 /* DataService.swift */,
 				82E923AB201413F10099DA6D /* AuthService.swift */,
+				82E923C52014AF920099DA6D /* Constants.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -274,6 +289,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SpotMark/Pods-SpotMark-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -281,6 +297,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -332,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82E923BE20148D7A0099DA6D /* ProfileVC.swift in Sources */,
+				82E923C62014AF920099DA6D /* Constants.swift in Sources */,
 				821FE7A320136E2D00F34189 /* SignUpVC.swift in Sources */,
 				821FE79A20135A2200F34189 /* RoundedView.swift in Sources */,
 				821FE791201352AC00F34189 /* LoginVC.swift in Sources */,
@@ -342,13 +360,17 @@
 				821FE7982013577200F34189 /* CustomButton.swift in Sources */,
 				821FE79C20135B4E00F34189 /* CustomTextField.swift in Sources */,
 				82E923AC201413F10099DA6D /* AuthService.swift in Sources */,
+				82E923CA2014B1690099DA6D /* Place.swift in Sources */,
 				82E923B220144B530099DA6D /* WalkthroughVC.swift in Sources */,
+				82E923CE2014C70D0099DA6D /* BorderedButton.swift in Sources */,
 				82E923C42014A3250099DA6D /* AddPlaceVC.swift in Sources */,
 				82E923C220149F380099DA6D /* CustomTabBarController.swift in Sources */,
+				82E923C82014AFF20099DA6D /* searchPlaceCell.swift in Sources */,
 				82E923C020148E860099DA6D /* ShadowView.swift in Sources */,
 				82E923B420144B700099DA6D /* SpotsListVC.swift in Sources */,
 				82E923BA20148D600099DA6D /* SpotsMapVC.swift in Sources */,
 				82E923B820145EB20099DA6D /* WalkthroughView.swift in Sources */,
+				82E923CC2014C6E50099DA6D /* roundedImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
