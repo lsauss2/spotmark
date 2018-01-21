@@ -24,6 +24,9 @@ class SpotsListVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func addPlaceFromEmpty (_ sender: Any) {
+        performSegue(withIdentifier: "showAddPlaceFromEmpty", sender: nil)
+    }
     
 
 

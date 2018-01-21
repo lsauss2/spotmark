@@ -346,6 +346,9 @@ them always handy</string>
                                 <state key="normal" title="Add a spot">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="addPlaceFromEmpty:" destination="Puc-7H-wf2" eventType="touchUpInside" id="Rg6-c7-HYa"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no-spots-image" translatesAutoresizingMaskIntoConstraints="NO" id="dzq-MO-8wC">
                                 <rect key="frame" x="104" y="170" width="153" height="150"/>
@@ -369,6 +372,7 @@ them always handy</string>
                         <outlet property="emptyButton" destination="aYg-B0-Vgi" id="6zU-kc-9oJ"/>
                         <outlet property="emptyImage" destination="dzq-MO-8wC" id="Pb0-Cw-Ygq"/>
                         <outlet property="emptyLabel" destination="khT-FI-ZND" id="OFA-2C-FF0"/>
+                        <segue destination="oW1-Rx-Bna" kind="show" identifier="showAddPlaceFromEmpty" id="Be7-qX-VSf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RuS-Ra-Hq4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -950,5 +954,6 @@ them always handy</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="wGN-MF-k5b"/>
+        <segue reference="Be7-qX-VSf"/>
     </inferredMetricsTieBreakers>
 </document>
