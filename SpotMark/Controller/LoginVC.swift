@@ -47,6 +47,12 @@ class LoginVC: UIViewController {
             })
         }
         
+        if emailTxtField.text == "" || passTxtField.text == "" {
+            let alertController = UIAlertController(title: "Error", message: "Please input your email address and password", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
     }
     
     @IBAction func logginWithFacebookTapped(_ sender: Any) {
