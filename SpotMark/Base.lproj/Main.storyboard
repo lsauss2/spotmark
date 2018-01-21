@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sFu-9P-WfT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -796,14 +796,29 @@ them always handy</string>
                     <view key="view" contentMode="scaleToFill" id="Onx-1d-bc8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="cxd-8m-wlt"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="tZG-tt-0tH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iHT-rg-S5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1524" y="-695"/>
+            <point key="canvasLocation" x="785" y="-658"/>
+        </scene>
+        <!--Add PlaceVC-->
+        <scene sceneID="BAl-B9-qvi">
+            <objects>
+                <viewController id="oW1-Rx-Bna" customClass="AddPlaceVC" customModule="SpotMark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lnl-j8-oO9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Lq8-2M-ZYP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z7V-ea-D1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="-658"/>
         </scene>
         <!--Custom Tab Bar Controller-->
         <scene sceneID="Mr6-hP-K6o">
@@ -823,6 +838,7 @@ them always handy</string>
                         <segue destination="mLe-A5-VbL" kind="relationship" relationship="viewControllers" id="Evh-x1-R1u"/>
                         <segue destination="onU-zF-7cj" kind="relationship" relationship="viewControllers" id="zD3-vd-vTa"/>
                         <segue destination="ESz-K1-w4C" kind="relationship" relationship="viewControllers" id="ILe-Lc-Pb2"/>
+                        <segue destination="oW1-Rx-Bna" kind="show" identifier="showAddPlace" id="pb6-g7-nbH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4D-6F-5l3" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -43,7 +43,7 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
     }
     
     @objc private func menuButtonAction(sender: UIButton) {
-        print("Tapped")
+        performSegue(withIdentifier: "showAddPlace", sender: nil)
     }
 
     override func didReceiveMemoryWarning() {
