@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
         <array key="Roboto-Light.ttf">
             <string>Roboto-Light</string>
         </array>
@@ -18,6 +21,107 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Forgot PasswordVC-->
+        <scene sceneID="HTC-uR-0E7">
+            <objects>
+                <viewController id="ZhM-f1-PNt" customClass="ForgotPasswordVC" customModule="SpotMark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6VL-4o-Qdx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMT-UD-5m6">
+                                <rect key="frame" x="40" y="60" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="K8o-lm-qzS"/>
+                                    <constraint firstAttribute="width" constant="14" id="RfX-6h-wuZ"/>
+                                </constraints>
+                                <state key="normal" image="close-icon"/>
+                                <connections>
+                                    <action selector="closeBtnTapped:" destination="ZhM-f1-PNt" eventType="touchUpInside" id="40L-tv-rsq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmD-8X-oAL">
+                                <rect key="frame" x="28" y="138" width="319" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="WQ2-zW-yzG"/>
+                                    <constraint firstAttribute="width" constant="319" id="ppP-YF-g8t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="24"/>
+                                <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ulz-RN-Xh9" customClass="RoundedView" customModule="SpotMark" customModuleProvider="target">
+                                <rect key="frame" x="40" y="255" width="295" height="48"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t4r-u4-Rfa" customClass="CustomTextField" customModule="SpotMark" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="0.0" width="285" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="XHg-Hf-3Su"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" textContentType="email"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Rkp-0C-OEU"/>
+                                    <constraint firstAttribute="bottom" secondItem="t4r-u4-Rfa" secondAttribute="bottom" id="Ubt-rX-dkK"/>
+                                    <constraint firstAttribute="trailing" secondItem="t4r-u4-Rfa" secondAttribute="trailing" id="boO-IM-Mes"/>
+                                    <constraint firstAttribute="width" constant="295" id="cto-xe-gAX"/>
+                                    <constraint firstItem="t4r-u4-Rfa" firstAttribute="leading" secondItem="ulz-RN-Xh9" secondAttribute="leading" constant="10" id="fki-ND-G7z"/>
+                                    <constraint firstItem="t4r-u4-Rfa" firstAttribute="top" secondItem="ulz-RN-Xh9" secondAttribute="top" id="omS-hN-emC"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your email address or phone number to reset your password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JE-Ap-PPX">
+                                <rect key="frame" x="40" y="186" width="295" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="OBl-Ma-sfh"/>
+                                    <constraint firstAttribute="height" constant="49" id="uyH-fe-VZG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcO-6S-thY" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
+                                <rect key="frame" x="40" y="327" width="295" height="49"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.8980392157" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="CuL-uJ-ANq"/>
+                                    <constraint firstAttribute="width" constant="295" id="ghX-5m-Ams"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetBtnTapped:" destination="ZhM-f1-PNt" eventType="touchUpInside" id="jj6-vX-hoi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QcO-6S-thY" firstAttribute="top" secondItem="ulz-RN-Xh9" secondAttribute="bottom" constant="24" id="652-52-ELf"/>
+                            <constraint firstItem="9JE-Ap-PPX" firstAttribute="centerX" secondItem="6VL-4o-Qdx" secondAttribute="centerX" id="9Mg-Fv-urF"/>
+                            <constraint firstItem="ulz-RN-Xh9" firstAttribute="top" secondItem="9JE-Ap-PPX" secondAttribute="bottom" constant="20" id="F9i-Sr-s1j"/>
+                            <constraint firstItem="ZMT-UD-5m6" firstAttribute="top" secondItem="zJU-xD-iZy" secondAttribute="top" constant="40" id="OhS-bP-Og9"/>
+                            <constraint firstItem="QcO-6S-thY" firstAttribute="centerX" secondItem="6VL-4o-Qdx" secondAttribute="centerX" id="b2h-3M-Hrb"/>
+                            <constraint firstItem="ZMT-UD-5m6" firstAttribute="leading" secondItem="zJU-xD-iZy" secondAttribute="leading" constant="40" id="bfC-vF-ZUk"/>
+                            <constraint firstItem="wmD-8X-oAL" firstAttribute="top" secondItem="ZMT-UD-5m6" secondAttribute="bottom" constant="64" id="ebU-ic-ezn"/>
+                            <constraint firstItem="ulz-RN-Xh9" firstAttribute="centerX" secondItem="6VL-4o-Qdx" secondAttribute="centerX" id="j2O-cc-xQG"/>
+                            <constraint firstItem="wmD-8X-oAL" firstAttribute="centerX" secondItem="6VL-4o-Qdx" secondAttribute="centerX" id="ls3-dG-UyO"/>
+                            <constraint firstItem="9JE-Ap-PPX" firstAttribute="top" secondItem="wmD-8X-oAL" secondAttribute="bottom" constant="20" id="tyL-cr-QuI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zJU-xD-iZy"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTxtField" destination="t4r-u4-Rfa" id="wZl-xa-DvP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MSf-0b-0jD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="-658.02098950524737"/>
+        </scene>
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -170,6 +274,7 @@ them always handy</string>
                         <outlet property="loginBtn" destination="nI3-hy-Sem" id="DCn-Yf-yuA"/>
                         <outlet property="passTxtField" destination="VJa-UZ-8gN" id="jcX-Gj-85n"/>
                         <segue destination="ZbE-3C-CT3" kind="show" identifier="showSignUp" id="aF3-hC-pSg"/>
+                        <segue destination="ZhM-f1-PNt" kind="show" identifier="showForgotVC" id="458-dy-vXa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -351,6 +456,7 @@ them always handy</string>
     </scenes>
     <resources>
         <image name="back-arrow-black" width="13" height="7"/>
+        <image name="close-icon" width="14" height="14"/>
         <image name="logo" width="63" height="74"/>
     </resources>
 </document>

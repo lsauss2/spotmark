@@ -56,6 +56,7 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func forgotPasswordTapped(_ sender: Any) {
+        performSegue(withIdentifier: "showForgotVC", sender: nil)
     }
     
     
