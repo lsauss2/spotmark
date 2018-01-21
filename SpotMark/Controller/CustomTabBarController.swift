@@ -21,6 +21,30 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
         
         self.delegate = self
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        setupMiddleButton()
+    }
+    
+    func setupMiddleButton() {
+        let menuButton = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        
+        var menuButtonFrame = menuButton.frame
+        menuButtonFrame.origin.y = view.bounds.height - (menuButtonFrame.height + 15)
+        menuButtonFrame.origin.x = view.bounds.width/2 - menuButtonFrame.size.width/2
+        menuButton.frame = menuButtonFrame
+        menuButton.setImage(UIImage(named: "icon-add-big"), for: .normal)
+        view.addSubview(menuButton)
+        menuButton.addTarget(self, action: #selector(menuButtonAction(sender:)), for: .touchUpInside)
+        
+        view.layoutIfNeeded()
+    }
+    
+    @objc private func menuButtonAction(sender: UIButton) {
+        print("Tapped")
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -799,7 +799,7 @@ them always handy</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cxd-8m-wlt"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="tZG-tt-0tH"/>
+                    <tabBarItem key="tabBarItem" title="" id="tZG-tt-0tH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iHT-rg-S5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -820,9 +820,9 @@ them always handy</string>
                     <connections>
                         <segue destination="Puc-7H-wf2" kind="relationship" relationship="viewControllers" id="q5k-eg-6hl"/>
                         <segue destination="Rta-rh-Ur2" kind="relationship" relationship="viewControllers" id="rBN-FV-71m"/>
+                        <segue destination="mLe-A5-VbL" kind="relationship" relationship="viewControllers" id="Evh-x1-R1u"/>
                         <segue destination="onU-zF-7cj" kind="relationship" relationship="viewControllers" id="zD3-vd-vTa"/>
                         <segue destination="ESz-K1-w4C" kind="relationship" relationship="viewControllers" id="ILe-Lc-Pb2"/>
-                        <segue destination="mLe-A5-VbL" kind="relationship" relationship="viewControllers" id="Evh-x1-R1u"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4D-6F-5l3" userLabel="First Responder" sceneMemberID="firstResponder"/>
