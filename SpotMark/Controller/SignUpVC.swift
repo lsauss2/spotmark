@@ -39,12 +39,16 @@ class SignUpVC: UIViewController {
     @IBAction func signInBtnTapped(_ sender: Any) {
         
         if usernameTxtField.text == "" || emailAddressTxtField.text == "" || passwordTxtField.text == "" || passwordConfirmTxtField.text == "" {
-            print("Field empty")
+            let alertController = UIAlertController(title: "Error", message: "Please fill in all the required fields", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
             return
         }
         
         if passwordConfirmTxtField.text != passwordTxtField.text {
-            print("Password does not match")
+            let alertController = UIAlertController(title: "Error", message: "The confirmation password does not match", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
             return
         }
         

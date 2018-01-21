@@ -32,6 +32,12 @@ class ForgotPasswordVC: UIViewController {
     }
     
     @IBAction func resetBtnTapped(_ sender: Any) {
+        if emailTxtField.text == "" {
+            let alertController = UIAlertController(title: "Error", message: "Please input your email address", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
+            return
+        }
     }
 
 }
