@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sFu-9P-WfT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -820,6 +820,9 @@ them always handy</string>
                                     <constraint firstAttribute="height" constant="14" id="qhk-nb-bOV"/>
                                 </constraints>
                                 <state key="normal" image="close-icon"/>
+                                <connections>
+                                    <action selector="closeBtnTapped:" destination="oW1-Rx-Bna" eventType="touchUpInside" id="afw-Y7-MGv"/>
+                                </connections>
                             </button>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="dkU-vS-jBN">
                                 <rect key="frame" x="25" y="70" width="325" height="56"/>
@@ -852,6 +855,10 @@ them always handy</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lq8-2M-ZYP"/>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="dkU-vS-jBN" id="MNu-f8-6fh"/>
+                        <outlet property="tableView" destination="HgI-hr-bVv" id="pFD-K2-g2J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7V-ea-D1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
