@@ -275,6 +275,7 @@ them always handy</string>
                         <outlet property="passTxtField" destination="VJa-UZ-8gN" id="jcX-Gj-85n"/>
                         <segue destination="ZbE-3C-CT3" kind="show" identifier="showSignUp" id="aF3-hC-pSg"/>
                         <segue destination="ZhM-f1-PNt" kind="show" identifier="showForgotVC" id="458-dy-vXa"/>
+                        <segue destination="Puc-7H-wf2" kind="show" identifier="showHomeFromLogin" id="wGN-MF-k5b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -531,4 +532,7 @@ them always handy</string>
         <image name="close-icon" width="14" height="14"/>
         <image name="logo" width="63" height="74"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wGN-MF-k5b"/>
+    </inferredMetricsTieBreakers>
 </document>

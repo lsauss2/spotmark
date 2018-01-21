@@ -39,6 +39,7 @@ class LoginVC: UIViewController {
                 
                 if success {
                     print("User logged in")
+                    self.performSegue(withIdentifier: "showHomeFromLogin", sender: nil)
                 } else {
                     print(error)
                 }
