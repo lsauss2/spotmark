@@ -365,6 +365,11 @@ them always handy</string>
                         <color key="badgeColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-20"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="emptyButton" destination="aYg-B0-Vgi" id="6zU-kc-9oJ"/>
+                        <outlet property="emptyImage" destination="dzq-MO-8wC" id="Pb0-Cw-Ygq"/>
+                        <outlet property="emptyLabel" destination="khT-FI-ZND" id="OFA-2C-FF0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RuS-Ra-Hq4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
