@@ -23,6 +23,8 @@
 		82E923AC201413F10099DA6D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923AB201413F10099DA6D /* AuthService.swift */; };
 		82E923AE201432170099DA6D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82E923AD201432170099DA6D /* Roboto-Bold.ttf */; };
 		82E923B0201433B20099DA6D /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923AF201433B20099DA6D /* ForgotPasswordVC.swift */; };
+		82E923B220144B530099DA6D /* WalkthroughVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923B120144B530099DA6D /* WalkthroughVC.swift */; };
+		82E923B420144B700099DA6D /* SpotsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923B320144B700099DA6D /* SpotsListVC.swift */; };
 		E2220B0840CCCA1D2E4BE5AA /* Pods_SpotMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D33B2CEAE98A415377AE734 /* Pods_SpotMark.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		82E923AB201413F10099DA6D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		82E923AD201432170099DA6D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		82E923AF201433B20099DA6D /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		82E923B120144B530099DA6D /* WalkthroughVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughVC.swift; sourceTree = "<group>"; };
+		82E923B320144B700099DA6D /* SpotsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsListVC.swift; sourceTree = "<group>"; };
 		9D33B2CEAE98A415377AE734 /* Pods_SpotMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D11F3024ADBD89F3BE2380 /* Pods-SpotMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotMark.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotMark/Pods-SpotMark.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +142,8 @@
 				821FE790201352AC00F34189 /* LoginVC.swift */,
 				821FE7A220136E2D00F34189 /* SignUpVC.swift */,
 				82E923AF201433B20099DA6D /* ForgotPasswordVC.swift */,
+				82E923B120144B530099DA6D /* WalkthroughVC.swift */,
+				82E923B320144B700099DA6D /* SpotsListVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -309,6 +315,8 @@
 				821FE7982013577200F34189 /* CustomButton.swift in Sources */,
 				821FE79C20135B4E00F34189 /* CustomTextField.swift in Sources */,
 				82E923AC201413F10099DA6D /* AuthService.swift in Sources */,
+				82E923B220144B530099DA6D /* WalkthroughVC.swift in Sources */,
+				82E923B420144B700099DA6D /* SpotsListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
