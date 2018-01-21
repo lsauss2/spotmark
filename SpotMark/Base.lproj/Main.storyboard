@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9M4-Eq-nG9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -462,6 +462,7 @@ them always handy</string>
                         <outlet property="passwordConfirmTxtField" destination="xPG-Ks-sS5" id="u4C-ol-Mem"/>
                         <outlet property="passwordTxtField" destination="Tse-cl-axd" id="yt8-AY-a7c"/>
                         <outlet property="usernameTxtField" destination="Lxh-yv-v4m" id="v4I-9d-6Xr"/>
+                        <segue destination="9M4-Eq-nG9" kind="show" identifier="showWalkthrough" id="wkm-Ty-7Hz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YXh-fB-rsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -477,22 +478,39 @@ them always handy</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDX-qX-ThE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="570"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="xeX-Zt-I7m"/>
+                                    <constraint firstAttribute="height" constant="570" id="xeX-Zt-I7m"/>
                                 </constraints>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="HMs-y4-Wxh">
-                                <rect key="frame" x="168" y="508" width="39" height="37"/>
+                                <rect key="frame" x="168" y="416" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="pageIndicatorTintColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTn-Fp-DAB" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
+                                <rect key="frame" x="40" y="580" width="295" height="40"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.8980392157" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="84b-gw-Iz2"/>
+                                    <constraint firstAttribute="width" constant="295" id="FGC-Tg-M5t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getStartedBtnTapped:" destination="9M4-Eq-nG9" eventType="touchUpInside" id="nV1-pP-jKP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xDX-qX-ThE" firstAttribute="leading" secondItem="V1N-N0-rEq" secondAttribute="leading" id="7Jp-n3-pss"/>
+                            <constraint firstItem="GTn-Fp-DAB" firstAttribute="centerX" secondItem="oHR-Zj-RJY" secondAttribute="centerX" id="PhL-5s-Txw"/>
                             <constraint firstItem="xDX-qX-ThE" firstAttribute="trailing" secondItem="V1N-N0-rEq" secondAttribute="trailing" id="UGs-UX-VOz"/>
+                            <constraint firstItem="V1N-N0-rEq" firstAttribute="bottom" secondItem="GTn-Fp-DAB" secondAttribute="bottom" constant="47" id="iSX-u4-2bD"/>
                             <constraint firstItem="xDX-qX-ThE" firstAttribute="top" secondItem="oHR-Zj-RJY" secondAttribute="top" id="tV7-dp-9bI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="V1N-N0-rEq"/>
@@ -500,6 +518,7 @@ them always handy</string>
                     <connections>
                         <outlet property="pageControl" destination="HMs-y4-Wxh" id="Ejb-gt-6jP"/>
                         <outlet property="scrollView" destination="xDX-qX-ThE" id="Daw-pt-JDz"/>
+                        <segue destination="Puc-7H-wf2" kind="show" identifier="showHomeFromWalkthrough" id="x5b-hv-J7f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQ5-D6-Z7C" userLabel="First Responder" sceneMemberID="firstResponder"/>

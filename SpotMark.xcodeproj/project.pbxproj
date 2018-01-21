@@ -114,7 +114,6 @@
 				821FE78E2013528C00F34189 /* View */,
 				821FE78D2013528500F34189 /* Model */,
 				821FE77B2013516700F34189 /* AppDelegate.swift */,
-				82E923B520145E700099DA6D /* WalkthroughView.xib */,
 				821FE77F2013516700F34189 /* Main.storyboard */,
 				821FE7822013516700F34189 /* Assets.xcassets */,
 				821FE7842013516700F34189 /* LaunchScreen.storyboard */,
@@ -138,6 +137,7 @@
 				821FE79920135A2200F34189 /* RoundedView.swift */,
 				821FE79B20135B4E00F34189 /* CustomTextField.swift */,
 				82E923B720145EB20099DA6D /* WalkthroughView.swift */,
+				82E923B520145E700099DA6D /* WalkthroughView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";

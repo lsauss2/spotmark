@@ -52,6 +52,8 @@ class SignUpVC: UIViewController {
             
             if success {
                 print("User registered successfully")
+                self.view.endEditing(true)
+                self.performSegue(withIdentifier: "showWalkthrough", sender: nil)
             } else {
                 print(error)
             }

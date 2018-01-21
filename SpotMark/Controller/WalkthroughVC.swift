@@ -13,9 +13,9 @@ class WalkthroughVC: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    let feature1 = ["title": "Header number one", "description": "Description number one", "image": "walkthrough-one"]
-    let feature2 = ["title": "Header number two", "description": "Description number two", "image": "walkthrough-two"]
-    let feature3 = ["title": "Header number three", "description": "Description number three", "image": "walkthrough-three"]
+    let feature1 = ["title": "Discover places around", "description": "Go out there and discover new places that you want to try", "image": "walkthrough-one"]
+    let feature2 = ["title": "Save your favorites spots", "description": "Like a place? Save it in Spotmark to have it always at hand", "image": "walkthrough-two"]
+    let feature3 = ["title": "Always know where to go", "description": "With all your favorite places at hand, always know where to go", "image": "walkthrough-three"]
     
     var featureArray = [Dictionary<String, String>]()
     
@@ -26,7 +26,7 @@ class WalkthroughVC: UIViewController, UIScrollViewDelegate {
         
         featureArray = [feature1, feature2, feature3]
         scrollView.isPagingEnabled = true
-        scrollView.contentSize = CGSize(width: self.view.bounds.width * 3, height: 500)
+        scrollView.contentSize = CGSize(width: self.view.bounds.width * 3, height: 570)
         scrollView.showsHorizontalScrollIndicator = false
         
         loadFeatures()
@@ -58,5 +58,11 @@ class WalkthroughVC: UIViewController, UIScrollViewDelegate {
         pageControl.currentPage = Int(page)
         
     }
+    
+    @IBAction func getStartedBtnTapped(_ sender: Any) {
+        performSegue(withIdentifier: "showHomeFromWalkthrough", sender: nil)
+    }
+    
+    
 
 }
