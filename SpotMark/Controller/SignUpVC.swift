@@ -30,6 +30,27 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func signInBtnTapped(_ sender: Any) {
+        
+        if usernameTxtField.text == "" || emailAddressTxtField.text == "" || passwordTxtField.text == "" || passwordConfirmTxtField.text == "" {
+            print("Field empty")
+            return
+        }
+        
+        if passwordConfirmTxtField.text != passwordTxtField.text {
+            print("Password does not match")
+            return
+        }
+        
+        AuthService().registerUser(withEmail: emailAddressTxtField.text!, andPassword: passwordTxtField.text!, andUsername: usernameTxtField.text!) { (success, error) in
+            
+            if success {
+                print("User registered successfully")
+            } else {
+                print(error)
+            }
+            
+        }
+        
     }
     
     

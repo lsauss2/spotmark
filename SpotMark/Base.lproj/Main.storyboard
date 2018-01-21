@@ -212,6 +212,7 @@ them always handy</string>
                                 </state>
                                 <connections>
                                     <action selector="logginWithFacebookTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="om3-Vu-2gL"/>
+                                    <action selector="signUpWithFacebookBtnTapped:" destination="ZbE-3C-CT3" eventType="touchUpInside" id="nlZ-Cg-ApH"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ci0-jw-86s">
@@ -338,7 +339,6 @@ them always handy</string>
                                 <connections>
                                     <action selector="logginBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TwW-mD-bJq"/>
                                     <action selector="signInBtnTapped:" destination="ZbE-3C-CT3" eventType="touchUpInside" id="pav-0t-jCR"/>
-                                    <action selector="signUpWithFacebookBtnTapped:" destination="ZbE-3C-CT3" eventType="touchUpInside" id="uxT-8q-u98"/>
                                 </connections>
                             </button>
                         </subviews>
