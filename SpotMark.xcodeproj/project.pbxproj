@@ -20,6 +20,7 @@
 		821FE79E2013613E00F34189 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 821FE79D2013613E00F34189 /* GoogleService-Info.plist */; };
 		821FE7A1201364E800F34189 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE7A0201364E800F34189 /* DataService.swift */; };
 		821FE7A320136E2D00F34189 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE7A220136E2D00F34189 /* SignUpVC.swift */; };
+		82E923AC201413F10099DA6D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923AB201413F10099DA6D /* AuthService.swift */; };
 		E2220B0840CCCA1D2E4BE5AA /* Pods_SpotMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D33B2CEAE98A415377AE734 /* Pods_SpotMark.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		821FE79D2013613E00F34189 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		821FE7A0201364E800F34189 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		821FE7A220136E2D00F34189 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		82E923AB201413F10099DA6D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		9D33B2CEAE98A415377AE734 /* Pods_SpotMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D11F3024ADBD89F3BE2380 /* Pods-SpotMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotMark.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotMark/Pods-SpotMark.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				821FE7A0201364E800F34189 /* DataService.swift */,
+				82E923AB201413F10099DA6D /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -233,12 +236,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SpotMark/Pods-SpotMark-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -295,6 +300,7 @@
 				821FE7A1201364E800F34189 /* DataService.swift in Sources */,
 				821FE7982013577200F34189 /* CustomButton.swift in Sources */,
 				821FE79C20135B4E00F34189 /* CustomTextField.swift in Sources */,
+				82E923AC201413F10099DA6D /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
