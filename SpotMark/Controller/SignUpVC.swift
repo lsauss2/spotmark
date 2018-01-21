@@ -17,6 +17,13 @@ class SignUpVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        usernameTxtField.delegate = self
+        emailAddressTxtField.delegate = self
+        passwordTxtField.delegate = self
+        passwordConfirmTxtField.delegate = self
+        
+        usernameTxtField.becomeFirstResponder()
 
         // Do any additional setup after loading the view.
     }
@@ -55,9 +62,25 @@ class SignUpVC: UIViewController {
     
     
     @IBAction func signInTapped(_ sender: Any) {
+        view.endEditing(true)
         dismiss(animated: true, completion: nil)
     }
     
     
 
+}
+
+extension SignUpVC: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? CustomTextField {
+            nextField.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+
+        return false
+    }
+    
 }
