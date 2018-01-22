@@ -1292,6 +1292,7 @@ them always handy</string>
                         <outlet property="emptyLabel" destination="h9x-ya-ftO" id="XJh-Gl-bIn"/>
                         <outlet property="searchBar" destination="dkU-vS-jBN" id="MNu-f8-6fh"/>
                         <outlet property="tableView" destination="HgI-hr-bVv" id="pFD-K2-g2J"/>
+                        <segue destination="Ror-54-aUy" kind="show" identifier="showConfirmPlace" id="gTA-aV-2hQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7V-ea-D1I" userLabel="First Responder" sceneMemberID="firstResponder"/>

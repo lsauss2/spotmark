@@ -158,6 +158,13 @@ class AddPlaceVC: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showConfirmPlace" {
+            let destination = segue.destination as? ConfirmPlaceVC
+            destination?.place = places[(tableView.indexPathForSelectedRow?.row)!]
+        }
+    }
+    
 }
 
 extension AddPlaceVC: UITableViewDelegate, UITableViewDataSource {
@@ -180,6 +187,10 @@ extension AddPlaceVC: UITableViewDelegate, UITableViewDataSource {
             return searchPlaceCell()
         }
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showConfirmPlace", sender: self)
     }
     
 }

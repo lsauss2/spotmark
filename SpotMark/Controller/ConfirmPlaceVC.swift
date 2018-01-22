@@ -9,9 +9,13 @@
 import UIKit
 
 class ConfirmPlaceVC: UIViewController {
+    
+    var place: Place!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(place.placeName)
 
         // Do any additional setup after loading the view.
     }
