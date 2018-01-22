@@ -906,6 +906,279 @@ them always handy</string>
             </objects>
             <point key="canvasLocation" x="785" y="-658"/>
         </scene>
+        <!--Confirm PlaceVC-->
+        <scene sceneID="paI-wm-f2O">
+            <objects>
+                <viewController id="Ror-54-aUy" customClass="ConfirmPlaceVC" customModule="SpotMark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="05g-f3-nb9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fJ-cI-H9J">
+                                <rect key="frame" x="25" y="47" width="13" height="7"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="13" id="EqC-8E-MKT"/>
+                                    <constraint firstAttribute="height" constant="7" id="h0c-7z-mrv"/>
+                                </constraints>
+                                <state key="normal" image="back-icon-black"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2II-86-Kks">
+                                <rect key="frame" x="25" y="300" width="325" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="325" id="ANa-hj-OyP"/>
+                                    <constraint firstAttribute="height" constant="21" id="cA3-Zd-9GY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wi-IS-JuH">
+                                <rect key="frame" x="25" y="274" width="325" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="325" id="bfP-qj-BN0"/>
+                                    <constraint firstAttribute="height" constant="20" id="sFd-fz-4Vg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kiu-Ls-vbo">
+                                <rect key="frame" x="25" y="355" width="326" height="196"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="k8N-70-Cad">
+                                        <rect key="frame" x="0.0" y="0.0" width="326" height="34"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dT5-Ow-KiQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="92" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="UPE-Lr-dIQ"/>
+                                                    <constraint firstAttribute="width" constant="92" id="uHO-je-h3D"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MR-dq-WMf">
+                                                <rect key="frame" x="117" y="0.0" width="92" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="NuW-Sy-3S5"/>
+                                                    <constraint firstAttribute="height" constant="34" id="fJZ-g9-2go"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ns-fX-LDn">
+                                                <rect key="frame" x="234" y="0.0" width="92" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="AaN-fZ-gpA"/>
+                                                    <constraint firstAttribute="height" constant="34" id="MNJ-xG-ChS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="bY5-Wp-K2o">
+                                        <rect key="frame" x="0.0" y="54" width="326" height="34"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sV-ww-HMQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="92" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="TIp-EC-BMu"/>
+                                                    <constraint firstAttribute="height" constant="34" id="fve-hp-FsX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbh-sT-ady">
+                                                <rect key="frame" x="117" y="0.0" width="92" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="pWx-qA-McF"/>
+                                                    <constraint firstAttribute="height" constant="34" id="qli-av-yk8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4f-U2-EAv">
+                                                <rect key="frame" x="234" y="0.0" width="92" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="UAd-2L-W5y"/>
+                                                    <constraint firstAttribute="width" constant="92" id="y1O-UM-oFQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="XiO-2c-5QB">
+                                        <rect key="frame" x="0.0" y="108" width="326" height="34"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="091-qd-A9J">
+                                                <rect key="frame" x="0.0" y="0.0" width="92" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="1v8-bU-7xj"/>
+                                                    <constraint firstAttribute="width" constant="92" id="ZqX-1P-6Es"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kti-zz-lCo">
+                                                <rect key="frame" x="117" y="0.0" width="92" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="MSf-zz-ek5"/>
+                                                    <constraint firstAttribute="height" constant="34" id="Vpz-xS-IXp"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgl-Q3-Ts7">
+                                                <rect key="frame" x="234" y="0.0" width="92" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="FeC-Iv-ygo"/>
+                                                    <constraint firstAttribute="height" constant="34" id="z6y-A5-Smi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="OFr-Ui-sdW">
+                                        <rect key="frame" x="0.0" y="162" width="326" height="34"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5p-KZ-bia">
+                                                <rect key="frame" x="0.0" y="0.0" width="92" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="DEv-by-H9T"/>
+                                                    <constraint firstAttribute="height" constant="34" id="z31-8s-O44"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grb-OV-jlm">
+                                                <rect key="frame" x="117" y="0.0" width="92" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="81t-EL-fYj"/>
+                                                    <constraint firstAttribute="height" constant="34" id="Wl9-wJ-J7z"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeQ-pK-REW">
+                                                <rect key="frame" x="234" y="0.0" width="92" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="87l-w7-IKV"/>
+                                                    <constraint firstAttribute="height" constant="34" id="Rwi-JV-tiQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u29-8s-74q" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
+                                <rect key="frame" x="25" y="587" width="325" height="40"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.8980392157" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QM3-b4-5eS"/>
+                                    <constraint firstAttribute="width" constant="325" id="num-RO-2fL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                <state key="normal" title="Add Place">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tz6-CD-auj" customClass="roundedImage" customModule="SpotMark" customModuleProvider="target">
+                                <rect key="frame" x="25" y="68" width="325" height="196"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="325" id="9x4-fj-NE8"/>
+                                    <constraint firstAttribute="height" constant="196" id="yNW-NH-Wid"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HxR-jt-BOy">
+                                <rect key="frame" x="25" y="325" width="48" height="9"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-full" translatesAutoresizingMaskIntoConstraints="NO" id="tpt-Ja-a4t">
+                                        <rect key="frame" x="0.0" y="0.0" width="8" height="9"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-full" translatesAutoresizingMaskIntoConstraints="NO" id="mfn-2R-Tsl">
+                                        <rect key="frame" x="10" y="0.0" width="8" height="9"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-full" translatesAutoresizingMaskIntoConstraints="NO" id="ewL-7k-wJX">
+                                        <rect key="frame" x="20" y="0.0" width="8" height="9"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-full" translatesAutoresizingMaskIntoConstraints="NO" id="GJl-yc-nxi">
+                                        <rect key="frame" x="30" y="0.0" width="8" height="9"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-full" translatesAutoresizingMaskIntoConstraints="NO" id="gf8-vd-LPv">
+                                        <rect key="frame" x="40" y="0.0" width="8" height="9"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="pj1-XQ-fcf"/>
+                                    <constraint firstAttribute="height" constant="9" id="xny-P0-mBo"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgB-CK-OUr">
+                                <rect key="frame" x="90" y="323" width="94" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="7u1-9M-Fc7"/>
+                                    <constraint firstAttribute="height" constant="13" id="SXV-t1-KSR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="11"/>
+                                <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qgB-CK-OUr" firstAttribute="centerY" secondItem="HxR-jt-BOy" secondAttribute="centerY" id="1wl-sj-zjh"/>
+                            <constraint firstItem="Tz6-CD-auj" firstAttribute="centerX" secondItem="05g-f3-nb9" secondAttribute="centerX" id="Ac2-wN-1DZ"/>
+                            <constraint firstItem="HkM-KV-Pxf" firstAttribute="bottom" secondItem="u29-8s-74q" secondAttribute="bottom" constant="40" id="FIV-hm-4NW"/>
+                            <constraint firstItem="5wi-IS-JuH" firstAttribute="top" secondItem="Tz6-CD-auj" secondAttribute="bottom" constant="10" id="L6Z-Ku-Aov"/>
+                            <constraint firstItem="kiu-Ls-vbo" firstAttribute="centerX" secondItem="05g-f3-nb9" secondAttribute="centerX" id="Mcb-AN-pJO"/>
+                            <constraint firstItem="5wi-IS-JuH" firstAttribute="centerX" secondItem="05g-f3-nb9" secondAttribute="centerX" id="Qje-6F-oD0"/>
+                            <constraint firstItem="u29-8s-74q" firstAttribute="centerX" secondItem="05g-f3-nb9" secondAttribute="centerX" id="UT7-f1-nAe"/>
+                            <constraint firstItem="1fJ-cI-H9J" firstAttribute="leading" secondItem="HkM-KV-Pxf" secondAttribute="leading" constant="25" id="UkI-PM-DGF"/>
+                            <constraint firstItem="2II-86-Kks" firstAttribute="centerX" secondItem="05g-f3-nb9" secondAttribute="centerX" id="Vwg-sM-Z4p"/>
+                            <constraint firstItem="HxR-jt-BOy" firstAttribute="leading" secondItem="HkM-KV-Pxf" secondAttribute="leading" constant="25" id="Xhl-br-q5u"/>
+                            <constraint firstItem="HxR-jt-BOy" firstAttribute="top" secondItem="2II-86-Kks" secondAttribute="bottom" constant="4" id="gVg-Nw-Yxj"/>
+                            <constraint firstItem="u29-8s-74q" firstAttribute="top" secondItem="kiu-Ls-vbo" secondAttribute="bottom" constant="36" id="jOE-TD-wsQ"/>
+                            <constraint firstItem="2II-86-Kks" firstAttribute="top" secondItem="5wi-IS-JuH" secondAttribute="bottom" constant="6" id="nlr-D9-ImG"/>
+                            <constraint firstItem="qgB-CK-OUr" firstAttribute="leading" secondItem="HxR-jt-BOy" secondAttribute="trailing" constant="17" id="qtK-tW-5fw"/>
+                            <constraint firstItem="Tz6-CD-auj" firstAttribute="top" secondItem="1fJ-cI-H9J" secondAttribute="bottom" constant="14" id="xwU-BB-k33"/>
+                            <constraint firstItem="1fJ-cI-H9J" firstAttribute="top" secondItem="HkM-KV-Pxf" secondAttribute="top" constant="27" id="yyl-S5-G9T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HkM-KV-Pxf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j3i-EA-QT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="-1336.2818590704649"/>
+        </scene>
         <!--Add PlaceVC-->
         <scene sceneID="BAl-B9-qvi">
             <objects>
@@ -982,6 +1255,20 @@ them always handy</string>
                                 <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="h9x-ya-ftO">
+                                <rect key="frame" x="128" y="270" width="119.5" height="113"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search-icon-big" translatesAutoresizingMaskIntoConstraints="NO" id="gLU-MN-9Sr">
+                                        <rect key="frame" x="28" y="0.0" width="64" height="64"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No results found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFr-JJ-vHL">
+                                        <rect key="frame" x="0.0" y="94" width="119.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                        <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -991,15 +1278,18 @@ them always handy</string>
                             <constraint firstItem="kwf-wj-UMB" firstAttribute="centerX" secondItem="lnl-j8-oO9" secondAttribute="centerX" id="Iaf-hK-mvh"/>
                             <constraint firstItem="Iev-5T-YI6" firstAttribute="top" secondItem="Lq8-2M-ZYP" secondAttribute="top" constant="20" id="Jjc-RN-tVP"/>
                             <constraint firstItem="dkU-vS-jBN" firstAttribute="top" secondItem="kwf-wj-UMB" secondAttribute="bottom" constant="13" id="KPo-0C-Nbf"/>
+                            <constraint firstItem="h9x-ya-ftO" firstAttribute="centerX" secondItem="lnl-j8-oO9" secondAttribute="centerX" id="Lhh-0l-B2c"/>
                             <constraint firstItem="HgI-hr-bVv" firstAttribute="leading" secondItem="Lq8-2M-ZYP" secondAttribute="leading" constant="25" id="OiW-gZ-U0s"/>
                             <constraint firstItem="dkU-vS-jBN" firstAttribute="leading" secondItem="Lq8-2M-ZYP" secondAttribute="leading" constant="25" id="Q86-d8-P3h"/>
                             <constraint firstItem="Lq8-2M-ZYP" firstAttribute="trailing" secondItem="HgI-hr-bVv" secondAttribute="trailing" constant="25" id="SQ9-gT-86S"/>
                             <constraint firstItem="HgI-hr-bVv" firstAttribute="top" secondItem="dkU-vS-jBN" secondAttribute="bottom" id="j80-uk-eZ6"/>
                             <constraint firstItem="HgI-hr-bVv" firstAttribute="bottom" secondItem="Lq8-2M-ZYP" secondAttribute="bottom" id="rVJ-Uv-r8A"/>
+                            <constraint firstItem="h9x-ya-ftO" firstAttribute="top" secondItem="Lq8-2M-ZYP" secondAttribute="top" constant="250" id="zKT-Hr-3wc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lq8-2M-ZYP"/>
                     </view>
                     <connections>
+                        <outlet property="emptyLabel" destination="h9x-ya-ftO" id="XJh-Gl-bIn"/>
                         <outlet property="searchBar" destination="dkU-vS-jBN" id="MNu-f8-6fh"/>
                         <outlet property="tableView" destination="HgI-hr-bVv" id="pFD-K2-g2J"/>
                     </connections>
@@ -1038,6 +1328,7 @@ them always handy</string>
     <resources>
         <image name="add-icon-small" width="16" height="16"/>
         <image name="back-arrow-black" width="13" height="7"/>
+        <image name="back-icon-black" width="13" height="7"/>
         <image name="close-icon" width="14" height="14"/>
         <image name="filters-icon" width="14" height="16"/>
         <image name="like-icon" width="20" height="18"/>
@@ -1047,7 +1338,9 @@ them always handy</string>
         <image name="no-spots-image" width="186" height="187"/>
         <image name="profile-icon" width="20" height="20"/>
         <image name="search-icon" width="16" height="16"/>
+        <image name="search-icon-big" width="64" height="64"/>
         <image name="settings-icon" width="15" height="16"/>
+        <image name="star-full" width="8" height="9"/>
         <image name="unknown-user" width="80" height="80"/>
     </resources>
     <inferredMetricsTieBreakers>

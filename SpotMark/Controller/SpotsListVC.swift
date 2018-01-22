@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import CoreLocation
 
 class SpotsListVC: UIViewController {
+    
+    let locationManager = CLLocationManager()
+    var userLatitude = CLLocationDegrees()
+    var userLongitude = CLLocationDegrees()
     
     @IBOutlet weak var emptyImage: UIImageView!
     @IBOutlet weak var emptyLabel: UILabel!
@@ -16,6 +21,14 @@ class SpotsListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest // You can change the locaiton accuary here.
+            locationManager.startUpdatingLocation()
+        }
 
     }
 
@@ -30,4 +43,39 @@ class SpotsListVC: UIViewController {
     
 
 
+}
+
+extension SpotsListVC: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            userLatitude = location.coordinate.latitude
+            userLongitude = location.coordinate.longitude
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if(status == CLAuthorizationStatus.denied) {
+            showLocationDisabledPopUp()
+        }
+    }
+    
+    func showLocationDisabledPopUp() {
+        let alertController = UIAlertController(title: "Background Location Access Disabled",
+                                                message: "In order to deliver pizza we need your location",
+                                                preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        
+        let openAction = UIAlertAction(title: "Open Settings", style: .default) { (action) in
+            if let url = URL(string: UIApplicationOpenSettingsURLString) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
+        alertController.addAction(openAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
 }

@@ -8,12 +8,18 @@
 
 import UIKit
 import Alamofire
+import CoreLocation
 
 class AddPlaceVC: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var emptyLabel: UIStackView!
     
+    
+    let locationManager = CLLocationManager()
+    var userLatitude = CLLocationDegrees()
+    var userLongitude = CLLocationDegrees()
     var places = [Place]()
 
     override func viewDidLoad() {
@@ -21,6 +27,16 @@ class AddPlaceVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
+        
+        locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
+            userLatitude = locationManager.location!.coordinate.latitude
+            userLongitude = locationManager.location!.coordinate.longitude
+        }
         
         self.downloadPlaces {
             
@@ -37,7 +53,10 @@ class AddPlaceVC: UIViewController {
     func downloadPlaces(completed: @escaping DownloadComplete){
         places.removeAll()
         
-        var url = URL(string: test_url)
+        let search_url = "\(base_nearby_search_url)key=\(api_key)&location=\(userLatitude),\(userLongitude)&radius=500&rankby=prominence"
+        print(search_url)
+        
+        var url = URL(string: search_url)
         
         Alamofire.request(url!).responseJSON { (response) in
             
@@ -84,12 +103,15 @@ class AddPlaceVC: UIViewController {
         
         places.removeAll()
         
-        let forecastUrl = URL(string: "https://maps.googleapis.com/maps/api/place/autocomplete/json?key=AIzaSyDDzFcsajCTfbIGYMCZwKKGu8y1IPk9GyE&input=\(input)&types=establishment&location=41.390205,2.154007&radius=500")
+        let url = "\(autocomplete_url)key=\(api_key)&input=\(input)&location=\(userLatitude),\(userLongitude)&radius=500"
+        
+        let forecastUrl = URL(string: url)
         Alamofire.request(forecastUrl!).responseJSON {response in
             
             let result = response.result
             if let dict = result.value as? Dictionary<String, AnyObject> {
                 
+                if dict["status"] as? String == "OK" {
                 if let placesResult = dict["predictions"] as? [Dictionary<String, AnyObject>] {
                     
                     for obj in placesResult {
@@ -120,9 +142,14 @@ class AddPlaceVC: UIViewController {
                         self.places.append(place)
                         
                     }
-                    
+                    self.tableView.isHidden = false
+                    self.emptyLabel.isHidden = true
                     self.tableView.reloadData()
                     
+                }
+                } else {
+                    self.tableView.isHidden = true
+                    self.emptyLabel.isHidden = false
                 }
                 
             }
@@ -171,6 +198,34 @@ extension AddPlaceVC: UISearchBarDelegate {
             }
             
         }
+    }
+    
+}
+
+extension AddPlaceVC: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if(status == CLAuthorizationStatus.denied) {
+            showLocationDisabledPopUp()
+        }
+    }
+    
+    func showLocationDisabledPopUp() {
+        let alertController = UIAlertController(title: "Background Location Access Disabled",
+                                                message: "In order to deliver pizza we need your location",
+                                                preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        
+        let openAction = UIAlertAction(title: "Open Settings", style: .default) { (action) in
+            if let url = URL(string: UIApplicationOpenSettingsURLString) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
+        alertController.addAction(openAction)
+        
+        self.present(alertController, animated: true, completion: nil)
     }
     
 }

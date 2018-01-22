@@ -20,6 +20,7 @@
 		821FE79E2013613E00F34189 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 821FE79D2013613E00F34189 /* GoogleService-Info.plist */; };
 		821FE7A1201364E800F34189 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE7A0201364E800F34189 /* DataService.swift */; };
 		821FE7A320136E2D00F34189 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE7A220136E2D00F34189 /* SignUpVC.swift */; };
+		8265FFBB201629D100038895 /* ConfirmPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8265FFBA201629D100038895 /* ConfirmPlaceVC.swift */; };
 		82E923AC201413F10099DA6D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923AB201413F10099DA6D /* AuthService.swift */; };
 		82E923AE201432170099DA6D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82E923AD201432170099DA6D /* Roboto-Bold.ttf */; };
 		82E923B0201433B20099DA6D /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923AF201433B20099DA6D /* ForgotPasswordVC.swift */; };
@@ -58,6 +59,7 @@
 		821FE79D2013613E00F34189 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		821FE7A0201364E800F34189 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		821FE7A220136E2D00F34189 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		8265FFBA201629D100038895 /* ConfirmPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPlaceVC.swift; sourceTree = "<group>"; };
 		82E923AB201413F10099DA6D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		82E923AD201432170099DA6D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		82E923AF201433B20099DA6D /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				82E923BD20148D7A0099DA6D /* ProfileVC.swift */,
 				82E923C120149F380099DA6D /* CustomTabBarController.swift */,
 				82E923C32014A3250099DA6D /* AddPlaceVC.swift */,
+				8265FFBA201629D100038895 /* ConfirmPlaceVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				82E923BE20148D7A0099DA6D /* ProfileVC.swift in Sources */,
 				82E923C62014AF920099DA6D /* Constants.swift in Sources */,
 				821FE7A320136E2D00F34189 /* SignUpVC.swift in Sources */,
+				8265FFBB201629D100038895 /* ConfirmPlaceVC.swift in Sources */,
 				821FE79A20135A2200F34189 /* RoundedView.swift in Sources */,
 				821FE791201352AC00F34189 /* LoginVC.swift in Sources */,
 				82E923BC20148D6D0099DA6D /* ContactsListVC.swift in Sources */,
