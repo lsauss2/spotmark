@@ -36,6 +36,14 @@ class DataService {
         REF_USERS.child(uid).updateChildValues(userData)
     }
     
+    func createPlaceInDb(id: String, placeData: Dictionary<String, Any>, placeCreationComplete: @escaping (_ status: Bool, _ error: Error?) -> ()){
+        REF_PLACES.child(id).updateChildValues(placeData) { (error, ref) in
+            if error == nil {
+                placeCreationComplete(true, nil)
+            }
+        }
+    }
+    
     
     
 }

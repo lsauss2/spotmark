@@ -282,10 +282,10 @@ them always handy</string>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
         </scene>
-        <!--Spots ListVC-->
+        <!--SpotsListVC-->
         <scene sceneID="Mmt-G5-J1o">
             <objects>
-                <viewController id="Puc-7H-wf2" customClass="SpotsListVC" customModule="SpotMark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SpotListVC" title="SpotsListVC" id="Puc-7H-wf2" customClass="SpotsListVC" customModule="SpotMark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zLp-yX-r2V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -946,157 +946,205 @@ them always handy</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kiu-Ls-vbo">
-                                <rect key="frame" x="25" y="355" width="326" height="196"/>
+                                <rect key="frame" x="25" y="371" width="326" height="196"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="k8N-70-Cad">
                                         <rect key="frame" x="0.0" y="0.0" width="326" height="34"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dT5-Ow-KiQ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dT5-Ow-KiQ" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="92" height="34"/>
+                                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="UPE-Lr-dIQ"/>
                                                     <constraint firstAttribute="width" constant="92" id="uHO-je-h3D"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Bar">
                                                     <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryTapped:" destination="Ror-54-aUy" eventType="touchUpInside" id="GLh-v8-joB"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MR-dq-WMf">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MR-dq-WMf" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
                                                 <rect key="frame" x="117" y="0.0" width="92" height="34"/>
+                                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="92" id="NuW-Sy-3S5"/>
                                                     <constraint firstAttribute="height" constant="34" id="fJZ-g9-2go"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Cafe">
                                                     <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryTapped:" destination="Ror-54-aUy" eventType="touchUpInside" id="cYV-rJ-Io4"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ns-fX-LDn">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ns-fX-LDn" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
                                                 <rect key="frame" x="234" y="0.0" width="92" height="34"/>
+                                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="92" id="AaN-fZ-gpA"/>
                                                     <constraint firstAttribute="height" constant="34" id="MNJ-xG-ChS"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Fitness">
                                                     <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryTapped:" destination="Ror-54-aUy" eventType="touchUpInside" id="U5y-lR-s7e"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="bY5-Wp-K2o">
                                         <rect key="frame" x="0.0" y="54" width="326" height="34"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sV-ww-HMQ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sV-ww-HMQ" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="92" height="34"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="92" id="TIp-EC-BMu"/>
                                                     <constraint firstAttribute="height" constant="34" id="fve-hp-FsX"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Games">
                                                     <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryTapped:" destination="Ror-54-aUy" eventType="touchUpInside" id="gR8-Pg-BHx"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbh-sT-ady">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbh-sT-ady" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
                                                 <rect key="frame" x="117" y="0.0" width="92" height="34"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="92" id="pWx-qA-McF"/>
                                                     <constraint firstAttribute="height" constant="34" id="qli-av-yk8"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Health">
                                                     <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryTapped:" destination="Ror-54-aUy" eventType="touchUpInside" id="JdA-W7-3oM"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4f-U2-EAv">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4f-U2-EAv" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
                                                 <rect key="frame" x="234" y="0.0" width="92" height="34"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="UAd-2L-W5y"/>
                                                     <constraint firstAttribute="width" constant="92" id="y1O-UM-oFQ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Hotel">
                                                     <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryTapped:" destination="Ror-54-aUy" eventType="touchUpInside" id="6u2-Xq-sWU"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="XiO-2c-5QB">
                                         <rect key="frame" x="0.0" y="108" width="326" height="34"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="091-qd-A9J">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="091-qd-A9J" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="92" height="34"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="1v8-bU-7xj"/>
                                                     <constraint firstAttribute="width" constant="92" id="ZqX-1P-6Es"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Landmark">
                                                     <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryTapped:" destination="Ror-54-aUy" eventType="touchUpInside" id="MHa-PF-b9V"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kti-zz-lCo">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kti-zz-lCo" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
                                                 <rect key="frame" x="117" y="0.0" width="92" height="34"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="92" id="MSf-zz-ek5"/>
                                                     <constraint firstAttribute="height" constant="34" id="Vpz-xS-IXp"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Nightclub">
                                                     <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryTapped:" destination="Ror-54-aUy" eventType="touchUpInside" id="Qvl-8h-LJa"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgl-Q3-Ts7">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgl-Q3-Ts7" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
                                                 <rect key="frame" x="234" y="0.0" width="92" height="34"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="92" id="FeC-Iv-ygo"/>
                                                     <constraint firstAttribute="height" constant="34" id="z6y-A5-Smi"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Restaurant">
                                                     <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryTapped:" destination="Ror-54-aUy" eventType="touchUpInside" id="2nI-gs-qoN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="OFr-Ui-sdW">
                                         <rect key="frame" x="0.0" y="162" width="326" height="34"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5p-KZ-bia">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5p-KZ-bia" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="92" height="34"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="92" id="DEv-by-H9T"/>
                                                     <constraint firstAttribute="height" constant="34" id="z31-8s-O44"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Shop">
                                                     <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryTapped:" destination="Ror-54-aUy" eventType="touchUpInside" id="cHg-U6-n5V"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grb-OV-jlm">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grb-OV-jlm" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
                                                 <rect key="frame" x="117" y="0.0" width="92" height="34"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="92" id="81t-EL-fYj"/>
                                                     <constraint firstAttribute="height" constant="34" id="Wl9-wJ-J7z"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Service">
                                                     <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryTapped:" destination="Ror-54-aUy" eventType="touchUpInside" id="21n-Nl-kLL"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeQ-pK-REW">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeQ-pK-REW" customClass="CustomButton" customModule="SpotMark" customModuleProvider="target">
                                                 <rect key="frame" x="234" y="0.0" width="92" height="34"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="92" id="87l-w7-IKV"/>
                                                     <constraint firstAttribute="height" constant="34" id="Rwi-JV-tiQ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Other">
                                                     <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryTapped:" destination="Ror-54-aUy" eventType="touchUpInside" id="3jf-H5-Nj2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1113,6 +1161,9 @@ them always handy</string>
                                 <state key="normal" title="Add Place">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="addPlace:" destination="Ror-54-aUy" eventType="touchUpInside" id="9jx-Dq-blt"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tz6-CD-auj" customClass="roundedImage" customModule="SpotMark" customModuleProvider="target">
                                 <rect key="frame" x="25" y="68" width="325" height="196"/>
@@ -1122,7 +1173,7 @@ them always handy</string>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HxR-jt-BOy">
-                                <rect key="frame" x="25" y="325" width="48" height="9"/>
+                                <rect key="frame" x="25" y="331" width="48" height="9"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-full" translatesAutoresizingMaskIntoConstraints="NO" id="tpt-Ja-a4t">
                                         <rect key="frame" x="0.0" y="0.0" width="8" height="9"/>
@@ -1145,20 +1196,9 @@ them always handy</string>
                                     <constraint firstAttribute="height" constant="9" id="xny-P0-mBo"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgB-CK-OUr">
-                                <rect key="frame" x="90" y="323" width="94" height="13"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="94" id="7u1-9M-Fc7"/>
-                                    <constraint firstAttribute="height" constant="13" id="SXV-t1-KSR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="11"/>
-                                <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="qgB-CK-OUr" firstAttribute="centerY" secondItem="HxR-jt-BOy" secondAttribute="centerY" id="1wl-sj-zjh"/>
                             <constraint firstItem="Tz6-CD-auj" firstAttribute="centerX" secondItem="05g-f3-nb9" secondAttribute="centerX" id="Ac2-wN-1DZ"/>
                             <constraint firstItem="HkM-KV-Pxf" firstAttribute="bottom" secondItem="u29-8s-74q" secondAttribute="bottom" constant="40" id="FIV-hm-4NW"/>
                             <constraint firstItem="5wi-IS-JuH" firstAttribute="top" secondItem="Tz6-CD-auj" secondAttribute="bottom" constant="10" id="L6Z-Ku-Aov"/>
@@ -1168,15 +1208,19 @@ them always handy</string>
                             <constraint firstItem="1fJ-cI-H9J" firstAttribute="leading" secondItem="HkM-KV-Pxf" secondAttribute="leading" constant="25" id="UkI-PM-DGF"/>
                             <constraint firstItem="2II-86-Kks" firstAttribute="centerX" secondItem="05g-f3-nb9" secondAttribute="centerX" id="Vwg-sM-Z4p"/>
                             <constraint firstItem="HxR-jt-BOy" firstAttribute="leading" secondItem="HkM-KV-Pxf" secondAttribute="leading" constant="25" id="Xhl-br-q5u"/>
-                            <constraint firstItem="HxR-jt-BOy" firstAttribute="top" secondItem="2II-86-Kks" secondAttribute="bottom" constant="4" id="gVg-Nw-Yxj"/>
-                            <constraint firstItem="u29-8s-74q" firstAttribute="top" secondItem="kiu-Ls-vbo" secondAttribute="bottom" constant="36" id="jOE-TD-wsQ"/>
+                            <constraint firstItem="HxR-jt-BOy" firstAttribute="top" secondItem="2II-86-Kks" secondAttribute="bottom" constant="10" id="gVg-Nw-Yxj"/>
+                            <constraint firstItem="u29-8s-74q" firstAttribute="top" secondItem="kiu-Ls-vbo" secondAttribute="bottom" constant="20" id="jOE-TD-wsQ"/>
                             <constraint firstItem="2II-86-Kks" firstAttribute="top" secondItem="5wi-IS-JuH" secondAttribute="bottom" constant="6" id="nlr-D9-ImG"/>
-                            <constraint firstItem="qgB-CK-OUr" firstAttribute="leading" secondItem="HxR-jt-BOy" secondAttribute="trailing" constant="17" id="qtK-tW-5fw"/>
                             <constraint firstItem="Tz6-CD-auj" firstAttribute="top" secondItem="1fJ-cI-H9J" secondAttribute="bottom" constant="14" id="xwU-BB-k33"/>
                             <constraint firstItem="1fJ-cI-H9J" firstAttribute="top" secondItem="HkM-KV-Pxf" secondAttribute="top" constant="27" id="yyl-S5-G9T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HkM-KV-Pxf"/>
                     </view>
+                    <connections>
+                        <outlet property="placeAddresLbl" destination="5wi-IS-JuH" id="izG-bJ-LVS"/>
+                        <outlet property="placeImageHolder" destination="Tz6-CD-auj" id="OZa-HB-86W"/>
+                        <outlet property="placeNameLbl" destination="2II-86-Kks" id="hAc-og-zBQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3i-EA-QT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
