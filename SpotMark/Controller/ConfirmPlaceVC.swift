@@ -90,7 +90,7 @@ class ConfirmPlaceVC: UIViewController {
                         }
                     }
                     
-                    self.currentPlace = Place(name: name, address: address, reference: picture, place_id: self.place.placeId, rating: rating, lat: lat, long: lon)
+                    self.currentPlace = Place(name: name, address: address, reference: picture, place_id: self.place.placeId, rating: rating, lat: lat, long: lon, type: "")
                     
                     self.setupUI(place: self.currentPlace!)
                     

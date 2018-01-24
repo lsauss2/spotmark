@@ -21,6 +21,9 @@
 		821FE7A1201364E800F34189 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE7A0201364E800F34189 /* DataService.swift */; };
 		821FE7A320136E2D00F34189 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE7A220136E2D00F34189 /* SignUpVC.swift */; };
 		8265FFBB201629D100038895 /* ConfirmPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8265FFBA201629D100038895 /* ConfirmPlaceVC.swift */; };
+		82D806B520189C6C005F213C /* placeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D806B420189C6C005F213C /* placeCell.swift */; };
+		82D806B72018A0E0005F213C /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D806B62018A0E0005F213C /* CircleButton.swift */; };
+		82D806B92018A5F7005F213C /* CellShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D806B82018A5F7005F213C /* CellShadowView.swift */; };
 		82E923AC201413F10099DA6D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923AB201413F10099DA6D /* AuthService.swift */; };
 		82E923AE201432170099DA6D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82E923AD201432170099DA6D /* Roboto-Bold.ttf */; };
 		82E923B0201433B20099DA6D /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E923AF201433B20099DA6D /* ForgotPasswordVC.swift */; };
@@ -60,6 +63,9 @@
 		821FE7A0201364E800F34189 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		821FE7A220136E2D00F34189 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		8265FFBA201629D100038895 /* ConfirmPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPlaceVC.swift; sourceTree = "<group>"; };
+		82D806B420189C6C005F213C /* placeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeCell.swift; sourceTree = "<group>"; };
+		82D806B62018A0E0005F213C /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		82D806B82018A5F7005F213C /* CellShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellShadowView.swift; sourceTree = "<group>"; };
 		82E923AB201413F10099DA6D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		82E923AD201432170099DA6D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		82E923AF201433B20099DA6D /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
@@ -167,6 +173,9 @@
 				82E923C72014AFF20099DA6D /* searchPlaceCell.swift */,
 				82E923CB2014C6E50099DA6D /* roundedImage.swift */,
 				82E923CD2014C70D0099DA6D /* BorderedButton.swift */,
+				82D806B420189C6C005F213C /* placeCell.swift */,
+				82D806B62018A0E0005F213C /* CircleButton.swift */,
+				82D806B82018A5F7005F213C /* CellShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,6 +365,7 @@
 				821FE7A320136E2D00F34189 /* SignUpVC.swift in Sources */,
 				8265FFBB201629D100038895 /* ConfirmPlaceVC.swift in Sources */,
 				821FE79A20135A2200F34189 /* RoundedView.swift in Sources */,
+				82D806B72018A0E0005F213C /* CircleButton.swift in Sources */,
 				821FE791201352AC00F34189 /* LoginVC.swift in Sources */,
 				82E923BC20148D6D0099DA6D /* ContactsListVC.swift in Sources */,
 				821FE77C2013516700F34189 /* AppDelegate.swift in Sources */,
@@ -370,11 +380,13 @@
 				82E923C42014A3250099DA6D /* AddPlaceVC.swift in Sources */,
 				82E923C220149F380099DA6D /* CustomTabBarController.swift in Sources */,
 				82E923C82014AFF20099DA6D /* searchPlaceCell.swift in Sources */,
+				82D806B92018A5F7005F213C /* CellShadowView.swift in Sources */,
 				82E923C020148E860099DA6D /* ShadowView.swift in Sources */,
 				82E923B420144B700099DA6D /* SpotsListVC.swift in Sources */,
 				82E923BA20148D600099DA6D /* SpotsMapVC.swift in Sources */,
 				82E923B820145EB20099DA6D /* WalkthroughView.swift in Sources */,
 				82E923CC2014C6E50099DA6D /* roundedImage.swift in Sources */,
+				82D806B520189C6C005F213C /* placeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

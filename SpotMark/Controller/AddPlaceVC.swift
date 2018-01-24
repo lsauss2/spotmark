@@ -83,7 +83,7 @@ class AddPlaceVC: UIViewController {
                             placeId = finalPlaceId
                         }
                         
-                        let place = Place(name: name, address: address, reference: "", place_id: placeId, rating: 0.0, lat: 0.0, long: 0.0)
+                        let place = Place(name: name, address: address, reference: "", place_id: placeId, rating: 0, lat: 0, long: 0, type: "")
                         
                         self.places.append(place)
                         
@@ -136,7 +136,7 @@ class AddPlaceVC: UIViewController {
                             
                         }
                         
-                        let place = Place(name: name, address: address, reference: "", place_id: placeId, rating: 0, lat: 0, long: 0)
+                        let place = Place(name: name, address: address, reference: "", place_id: placeId, rating: 0, lat: 0, long: 0, type: "")
                         
                         
                         self.places.append(place)

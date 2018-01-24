@@ -20,6 +20,7 @@ class Place {
     private var _placeDetailsUrl:String!
     private var _placeOtherPhotos:[String] = []
     private var _placeReviews:[Dictionary<String, Any>] = []
+    private var _placeType: String!
     
     var placeId:String {
         if _placeId == nil {
@@ -91,7 +92,14 @@ class Place {
         return _placeReviews
     }
     
-    init(name:String, address: String, reference: String, place_id: String, rating: Double, lat: Float, long: Float){
+    var placeType:String {
+        if _placeType == nil {
+            _placeType = ""
+        }
+        return _placeType
+    }
+    
+    init(name:String, address: String, reference: String, place_id: String, rating: Double, lat: Float, long: Float, type: String){
         self._placeName = name
         self._placeAddress = address
         self._placePhotoReference = reference
@@ -99,6 +107,7 @@ class Place {
         self._placeRating = rating
         self._placeLatitude = lat
         self._placeLongitude = long
+        self._placeType = type
         
         let placeDetailsUrl = "\(base_details_url)key=\(api_key)&placeid=\(place_id)"
         self._placeDetailsUrl = placeDetailsUrl
